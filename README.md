@@ -1,114 +1,109 @@
 📊 Supermarket Sales Analytics -MYSQL
 
-📌 1. Deskripsi Proyek
+📌 1. Project Description
 
-Supermarket adalah bisnis yang beroperasi dengan volume transaksi tinggi setiap harinya. Untuk mengoptimalkan operasional dan meningkatkan profitabilitas, analisis data menjadi sangat penting. Proyek ini bertujuan untuk menggali wawasan dari dataset transaksi penjualan supermarket dengan bantuan SQL.
+Supermarkets are businesses that operate with high transaction volumes every day. To optimize operations and increase profitability, data analysis is essential. This project aims to gain insights from supermarket sales transaction datasets with the help of SQL.
 
-Dalam proyek ini, kita akan:
+In this project, we will:
 
-✅ Menganalisis tren penjualan berdasarkan lokasi dan waktu.
+✅ Analyze sales trends based on location and time.
 
-✅ Mengidentifikasi kategori produk yang paling laris.
+✅ Identify the best-selling product categories.
 
-✅ Mengetahui preferensi metode pembayaran pelanggan.
+✅ Understand customer payment method preferences.
 
-✅ Menganalisis pola belanja berdasarkan demografi pelanggan.
+✅ Analyze shopping patterns based on customer demographics.
 
-✅ Menggunakan MySQL untuk melakukan eksplorasi dan analisis data.
+✅ Use MySQL to conduct data exploration and analysis.
 
-Dengan wawasan yang diperoleh, supermarket dapat meningkatkan strategi pemasaran, mengelola stok barang dengan lebih efisien, dan meningkatkan pengalaman pelanggan.
+With the insights gained, supermarkets can improve their marketing strategies, manage inventory more efficiently, and enhance customer experience.
 
-📂 2. Struktur Data
+📂 2. Data Structure
 
-Dataset dalam file supermarket.csv berisi transaksi dari berbagai cabang supermarket. Berikut adalah kolom-kolom yang terdapat dalam dataset:
+The dataset in the supermarket.csv file contains transactions from various supermarket branches. The following are the columns in the dataset:
 
-🛍️ Informasi Transaksi
+🛍️ Transaction Information
 
-Invoice ID : ID unik untuk setiap transaksi.
+Invoice ID: A unique ID for each transaction.
 
-Branch : Kode cabang supermarket.
+Branch : Supermarket branch code.
 
-City : Kota tempat cabang berada.
+City : City where the branch is located.
 
-Customer Type : Jenis pelanggan (Member / Non-member).
+Customer Type : Customer type (Member / Non-member).
 
-Gender : Jenis kelamin pelanggan.
+Gender : Customer gender.
 
-Product Line : Kategori produk yang dibeli.
+Product Line : Product category purchased.
 
-Unit Price : Harga satuan dari produk.
+Unit Price : Unit price of the product.
 
-Quantity : Jumlah produk yang dibeli dalam satu transaksi.
+Quantity : Number of products purchased in one transaction.
 
-Tax 5% : Pajak yang dikenakan pada transaksi.
+Tax 5% : Tax imposed on the transaction.
 
-Total : Jumlah total yang harus dibayar setelah pajak.
+Total : Total amount to be paid after tax.
 
-Date : Tanggal transaksi.
+Date : Transaction date.
 
-Time : Waktu transaksi dilakukan.
+Time : Time the transaction was made.
 
-Payment : Metode pembayaran yang digunakan (Cash, Credit Card, E-wallet).
+Payment : Payment method used (Cash, Credit Card, E-wallet).
 
-Rating : Rating yang diberikan oleh pelanggan terhadap pengalaman belanja.
+Rating : Rating given by customers for the shopping experience.
 
-Struktur dataset ini memungkinkan kita untuk menggali berbagai pola belanja dan faktor yang mempengaruhi kepuasan pelanggan.
+The structure of this dataset allows us to explore various shopping patterns and factors that influence customer satisfaction.
 
-📊 3. Query Analitik dalam MySQL
+📊 3. Analytical Queries in MySQL
 
-File Supermarket_Analitic_MYSQL.sql berisi berbagai query SQL yang digunakan untuk menganalisis dataset ini. Berikut beberapa contoh analisis yang dapat dilakukan:
+The Supermarket_Analitic_MYSQL.sql file contains various SQL queries used to analyze this dataset. Here are some examples of analysis that can be done:
 
-🔹 3.1. Analisis Penjualan
+🔹 3.1. Sales Analysis
 
-Total pendapatan per cabang untuk mengetahui cabang dengan performa terbaik.
+Total revenue per branch to identify the best performing branches.
 
-Penjualan per kategori produk untuk mengidentifikasi produk yang paling diminati.
+Sales per product category to identify the most popular products.
 
-Tren penjualan berdasarkan hari dan bulan untuk melihat pola musiman.
+Sales trends by day and month to see seasonal patterns.
 
-🔹 3.2. Analisis Waktu
+🔹 3.2. Time Analysis
 
-Jam transaksi paling ramai untuk mengetahui kapan pelanggan paling aktif berbelanja.
+Most popular transaction hours to find out when customers are most active in shopping.
 
-Hari dengan jumlah transaksi terbanyak untuk memahami pola belanja mingguan.
+Days with the highest number of transactions to understand weekly shopping patterns.
 
-🔹 3.3. Analisis Pelanggan
+🔹 3.3. Customer Analysis
 
-Distribusi jenis pelanggan (Member vs Non-member) untuk melihat pengaruh membership terhadap penjualan.
+Distribution of customer types (Member vs Non-member) to see the effect of membership on sales.
 
-Preferensi metode pembayaran untuk mengetahui apakah pelanggan lebih suka Cash, Credit Card, atau E-wallet.
+Payment method preferences to find out whether customers prefer Cash, Credit Card, or E-wallet.
 
-Perbedaan pola belanja berdasarkan gender untuk memahami kecenderungan belanja pelanggan pria dan wanita.
+Gender differences in shopping patterns to understand the shopping tendencies of male and female customers.
 
-🔹 3.4. Analisis Kepuasan Pelanggan
+🔹 3.4. Customer Satisfaction Analysis
 
-Rata-rata rating pelanggan per cabang untuk mengetahui kepuasan pelanggan di berbagai lokasi.
+Average customer rating per branch to find out customer satisfaction across locations.
 
-Hubungan antara jumlah pembelian dan rating pelanggan untuk melihat apakah pelanggan yang membeli lebih banyak cenderung memberikan rating lebih tinggi.
+Relationship between purchase amount and customer rating to see if customers who buy more tend to give higher ratings.
 
+📈 4. Results & Insights from Analysis
 
-📈 4. Hasil & Insight dari Analisis
+After running the analysis, here are some insights that can be obtained:
 
-Setelah menjalankan analisis, berikut beberapa wawasan yang bisa diperoleh:
+✅ Peak sales hours: Data shows that the most transactions occur at certain hours. Supermarkets can adjust stock and the number of cashiers during these hours.
 
-✅ Jam sibuk penjualan: Data menunjukkan bahwa transaksi terbanyak terjadi pada jam tertentu. Supermarket dapat menyesuaikan stok dan jumlah kasir di jam-jam ini.
+✅ Most popular products: Some product categories sell better than others. This information can be used for stock optimization.
 
-✅ Produk paling populer: Beberapa kategori produk lebih laris dibandingkan yang lain. Informasi ini bisa digunakan untuk optimasi stok.
+✅ Favorite payment methods: E-wallets are increasingly popular compared to other payment methods.
 
-✅ Metode pembayaran favorit: E-wallet semakin populer dibandingkan metode pembayaran lainnya.
+✅ Best performing branches: By looking at revenue per branch, management can find out which branches need more attention.
 
-✅ Cabang dengan performa terbaik: Dengan melihat pendapatan per cabang, manajemen bisa mengetahui cabang mana yang membutuhkan perhatian lebih.
+✅ Correlation between price and customer rating: Products with higher prices tend to get better ratings, indicating that customers are willing to pay more for quality.
 
-✅ Korelasi antara harga dan rating pelanggan: Produk dengan harga lebih tinggi cenderung mendapatkan rating lebih baik, menunjukkan bahwa pelanggan bersedia membayar lebih untuk kualitas.
+These insights can help supermarkets in making strategic decisions to increase sales and customer satisfaction.
 
-Insight ini dapat membantu supermarket dalam pengambilan keputusan strategis untuk meningkatkan penjualan dan kepuasan pelanggan.
+📌 5. Conclusion
 
-📌 5. Kesimpulan
+With this analysis, supermarkets can understand customer behavior, improve marketing strategies, and optimize business operations.If you want to do further analysis, you can use Python (Pandas & Matplotlib) for more interesting data visualization.
 
-Dengan analisis ini, supermarket dapat memahami perilaku pelanggan, meningkatkan strategi pemasaran, dan mengoptimalkan operasional bisnis.
-Jika Anda ingin melakukan analisis lebih lanjut, Anda bisa menggunakan Python (Pandas & Matplotlib) untuk visualisasi data yang lebih menarik.
-
-🚀 Mulai eksplorasi data sekarang dan buat keputusan berbasis data untuk bisnis yang lebih sukses!
-
-
-
+🚀 Start exploring data now and make data-driven decisions for a more successful business!
